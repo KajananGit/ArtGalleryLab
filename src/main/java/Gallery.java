@@ -16,11 +16,6 @@ public class Gallery {
         return this.till;
     }
 
-    public void setTill(double amount) {
-        this.till = amount;
-    }
-
-
     public void addTill(double amount){
         this.till += amount;
     }

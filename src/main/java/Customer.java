@@ -12,11 +12,6 @@ public class Customer {
        return this.wallet;
    }
 
-   public void setWallet(double amount){
-       this.wallet = amount;
-   }
-
-
    public void buyArtwork(Gallery gallery, Artwork art){
        Artwork wantedArt = gallery.getArtwork(art);
        double cost = wantedArt.getPrice();
