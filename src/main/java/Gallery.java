@@ -50,6 +50,6 @@ public class Gallery {
         }
         return totalValue;
     }
-    
+
 
 }
