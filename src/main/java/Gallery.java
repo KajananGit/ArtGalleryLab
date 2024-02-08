@@ -11,4 +11,18 @@ public class Gallery {
         this.till = 0;
         this.stock = new ArrayList<>();
     }
+
+    public double getTill(){
+        return this.till;
+    }
+
+    public void addArtwork(Artwork art){
+        this.stock.add(art);
+    }
+
+    public ArrayList<Artwork> getStock(){
+        return this.stock;
+    }
+
+
 }
