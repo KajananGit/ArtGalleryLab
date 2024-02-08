@@ -23,6 +23,12 @@ public class GalleryTest {
     }
 
     @Test
+    public void canSetTill(){
+        gallery.setTill(100);
+        assertThat(gallery.getTill()).isEqualTo(100);
+    }
+
+    @Test
     public void canAddArtworkToStock(){
         this.gallery.addArtwork(monaLisa);
         assertThat(gallery.getStock().size()).isEqualTo(1);
