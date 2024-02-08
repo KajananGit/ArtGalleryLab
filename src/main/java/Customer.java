@@ -1,4 +1,4 @@
-public class Customer { 
+public class Customer {
 
     private String name;
     private double wallet;
@@ -7,4 +7,15 @@ public class Customer {
        this.name = name;
        this.wallet = wallet;
    }
+
+   public double getWallet(){
+       return this.wallet;
+   }
+
+   public void setWallet(double amount){
+       this.wallet = amount;
+   }
+
+   
+
 }
