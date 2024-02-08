@@ -28,8 +28,13 @@ public class GalleryTest {
         assertThat(gallery.getStock().size()).isEqualTo(1);
     }
 
-    /* @Test
-    public void
+    @Test
+    public void canRemoveArtworkFromStock(){
+        this.gallery.addArtwork(monaLisa);
+        this.gallery.addArtwork(starryNight);
+        this.gallery.removeArtWork(monaLisa);
+        assertThat(gallery.getStock().size()).isEqualTo(1);
+    }
 
 
 }
