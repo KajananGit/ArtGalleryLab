@@ -43,5 +43,13 @@ public class GalleryTest {
         assertThat(gallery.getArtwork(starryNight)).isEqualTo(starryNight);
     }
 
+    @Test
+    public void canCalculateStockValue(){
+        this.gallery.addArtwork(monaLisa);
+        this.gallery.addArtwork(starryNight);
+        double actual = gallery.stock_take();
+        assertThat(actual).isEqualTo(350);
+    }
+
 
 }

@@ -43,6 +43,14 @@ public class Gallery {
         }
     }
 
+    public double stock_take(){
+        double totalValue = 0;
+        for(Artwork art : stock){
+            totalValue += art.getPrice();
+        }
+        return totalValue;
+    }
+
 
 
 
