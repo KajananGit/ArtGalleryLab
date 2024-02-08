@@ -32,6 +32,7 @@ public class CustomerTest {
         assertThat(customer.getWallet()).isEqualTo(20);
         assertThat(gallery.getTill()).isEqualTo(150);
         assertThat(gallery.getStock().size()).isEqualTo(1);
+        assertThat(customer.getArtCollection().size()).isEqualTo(1);
     }
 
     @Test
@@ -40,6 +41,8 @@ public class CustomerTest {
         assertThat(customer.getWallet()).isEqualTo(170);
         assertThat(gallery.getTill()).isEqualTo(0);
         assertThat(gallery.getStock().size()).isEqualTo(2);
+        assertThat(customer.getArtCollection().size()).isEqualTo(0);
+
     }
 
 
