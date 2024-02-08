@@ -7,12 +7,14 @@ public class GalleryTest {
 
     Gallery gallery;
     Artwork monaLisa;
+    Artwork starryNight;
 
     @BeforeEach
     public void setUp(){
 
         gallery =  new Gallery("Gallery");
         monaLisa = new Artwork("Mona Lisa", "Da Vinci", 200);
+        starryNight = new Artwork("Starry Night", "Van Gogh", 150);
     }
 
     @Test
@@ -27,13 +29,7 @@ public class GalleryTest {
     }
 
     /* @Test
-    public void canGetStock(){
-
-        assertThat(gallery.getStock().size()).isEqualTo(1);
-
-    }
-
-     */
+    public void
 
 
 }

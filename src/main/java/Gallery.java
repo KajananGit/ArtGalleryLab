@@ -20,6 +20,10 @@ public class Gallery {
         this.stock.add(art);
     }
 
+    public void removeArtWork(Artwork art){
+        this.stock.remove(art);
+    }
+
     public ArrayList<Artwork> getStock(){
         return this.stock;
     }
