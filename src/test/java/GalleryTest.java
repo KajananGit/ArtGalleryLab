@@ -42,6 +42,15 @@ public class GalleryTest {
         assertThat(gallery.getStock().size()).isEqualTo(1);
     }
 
+    @Test
+    public void canFindArtworkFromStock(){
+        this.gallery.addArtwork(starryNight);
+        this.gallery.addArtwork(monaLisa);
+        assertThat(gallery.getArtwork(starryNight)).isEqualTo(starryNight);
+    }
+
+
+
 
 
 
