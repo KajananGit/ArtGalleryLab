@@ -17,6 +17,20 @@ public class Customer {
    }
 
 
+   public void buyArtwork(Gallery gallery, Artwork art){
+       Artwork wantedArt = gallery.getArtwork(art);
+       double cost = wantedArt.getPrice();
+       if(cost < wallet){
+           wallet -= cost;
+           gallery.addTill(cost);
+           gallery.removeArtWork(art);
+       }
+   }
+
+
+
+
+
 
 
 }

@@ -20,6 +20,13 @@ public class Gallery {
         this.till = amount;
     }
 
+
+    public void addTill(double amount){
+        this.till += amount;
+    }
+
+
+
     public void addArtwork(Artwork art) {
         this.stock.add(art);
     }
